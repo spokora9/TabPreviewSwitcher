@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Preview Switcher",
+  "version": "2.0",
+  "description": "Visualize and manage tabs with live previews, like Alt+Tab for your browser.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "scripting",
+    "tabCapture"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "show_tab_preview": {
+      "suggested_key": {
+        "default": "Alt+Q"
+      },
+      "description": "Show tab previews"
+    }
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Tab Preview Switcher"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "options_page": "options.html",
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
