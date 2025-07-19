@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tab Preview Switcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <h1>Tab Preview Switcher</h1>
+    <button id="toggle-theme" title="Toggle dark/light mode">🌙</button>
+  </header>
+
+  <main>
+    <div id="tab-container" class="tab-grid"></div>
+
+    <div id="pagination">
+      <button id="prev">Prev</button>
+      <span id="page-indicator">Page 1</span>
+      <button id="next">Next</button>
+    </div>
+  </main>
+
+  <footer>
+    <small>Powered by your browser — no data leaves your machine.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

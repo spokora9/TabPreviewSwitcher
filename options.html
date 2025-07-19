@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab Preview Switcher - Options</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="top-bar">
+        <h1>Extension Settings</h1>
+    </header>
+
+    <main>
+        <form id="settings-form">
+            <label>
+                Theme:
+                <select id="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="system">System</option>
+                </select>
+            </label>
+
+            <label>
+                Tabs Per Page:
+                <input type="number" id="tabsPerPage" min="5" max="50" step="1" />
+            </label>
+
+            <label>
+                <input type="checkbox" id="livePreviews" />
+                Enable Live Previews (experimental)
+            </label>
+            <label>
+                <input type="checkbox" id="hoverPreviews" />
+                Show Previews on Hover Only
+            </label>
+
+
+            <button type="submit">Save Settings</button>
+        </form>
+
+        <p id="status" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="options.js"></script>
+</body>
+
+</html>
